@@ -1,0 +1,514 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vidyut Club is a college technical and innovation community where students build technology, explore possibilities, and turn ideas into real-world solutions.">
+  <meta name="keywords" content="Vidyut Club, technical club, innovation, coding, hackathon, workshops, engineering, college club">
+  <meta name="author" content="Vidyut Club">
+  <meta name="theme-color" content="#060814">
+  <meta property="og:title" content="Vidyut Club | Powering Ideas. Engineering Tomorrow.">
+  <meta property="og:description" content="Join Vidyut Club to learn, build, collaborate, and innovate through workshops, hackathons, quizzes, and peer learning.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/logo.svg">
+  <meta property="og:url" content="#">
+  <title>Vidyut Club | Powering Ideas. Engineering Tomorrow.</title>
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;family=Sora:wght@600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <div class="page-loader" id="page-loader" aria-hidden="true">
+    <div class="page-loader-inner">
+      <img src="assets/logo.svg" alt="" class="page-loader-logo" width="52" height="52">
+      <div class="page-loader-bar"><span></span></div>
+      <p class="page-loader-text">Powering up Vidyut Club</p>
+    </div>
+  </div>
+  <div class="ambient-glow glow-a" aria-hidden="true"></div>
+  <div class="ambient-glow glow-b" aria-hidden="true"></div>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header" id="top">
+    <nav class="navbar" aria-label="Primary">
+      <div class="container nav-inner">
+        <a href="#home" class="brand" aria-label="Vidyut Club home">
+          <img src="assets/logo.svg" alt="" class="brand-logo" width="42" height="42">
+          <span class="brand-text">VIDYUT CLUB</span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Open navigation menu">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+
+        <div class="nav-menu" id="primary-menu">
+          <div class="nav-links-wrap">
+            <span class="nav-indicator" aria-hidden="true"></span>
+            <ul class="nav-links">
+              <li><a class="nav-link active" href="#home">Home</a></li>
+              <li><a class="nav-link" href="#about">About</a></li>
+              <li><a class="nav-link" href="#events">Events</a></li>
+              <li><a class="nav-link" href="#team">Team</a></li>
+              <li><a class="nav-link" href="#join">Join Us</a></li>
+            </ul>
+          </div>
+          <button class="theme-toggle" type="button" id="theme-toggle" aria-label="Switch to light mode" aria-pressed="false">
+            <i data-lucide="sun" class="icon-sun" aria-hidden="true"></i>
+            <i data-lucide="moon" class="icon-moon" aria-hidden="true"></i>
+            <span class="theme-toggle-text">Theme</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero section" id="home" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-gradient hero-gradient-1"></div>
+        <div class="hero-gradient hero-gradient-2"></div>
+        <div class="hero-gradient hero-gradient-3"></div>
+        <div class="hero-grid"></div>
+        <div class="hero-beam"></div>
+        <canvas id="hero-particles" class="hero-particles"></canvas>
+        <div class="floating-orb orb-1"></div>
+        <div class="floating-orb orb-2"></div>
+        <div class="floating-orb orb-3"></div>
+      </div>
+
+      <div class="container hero-grid-layout">
+        <div class="hero-content reveal">
+          <p class="eyebrow"><span class="eyebrow-dot"></span>Official College Technical &amp; Innovation Club</p>
+          <h1 id="hero-title">
+            <span class="hero-title-main">VIDYUT</span>
+            <span class="hero-title-sub">CLUB</span>
+          </h1>
+          <p class="hero-tagline">POWERING IDEAS. ENGINEERING TOMORROW.</p>
+          <p class="hero-support">Where curiosity meets innovation. We build technology, explore possibilities, and transform ambitious ideas into real-world solutions.</p>
+          <div class="hero-actions">
+            <a href="#events" class="btn btn-primary">Explore Events</a>
+            <a href="#join" class="btn btn-secondary">Join Vidyut Club</a>
+          </div>
+          <ul class="hero-highlights" aria-label="Focus areas">
+            <li><i data-lucide="code-2" aria-hidden="true"></i><span>Coding</span></li>
+            <li><i data-lucide="cpu" aria-hidden="true"></i><span>Engineering</span></li>
+            <li><i data-lucide="bot" aria-hidden="true"></i><span>Robotics</span></li>
+            <li><i data-lucide="brain-circuit" aria-hidden="true"></i><span>AI &amp; Innovation</span></li>
+          </ul>
+          <div class="hero-stats" aria-label="Club highlights">
+            <div class="hero-stat">
+              <span class="hero-stat-value">Build</span>
+              <span class="hero-stat-label">Real-world projects</span>
+            </div>
+            <div class="hero-stat">
+              <span class="hero-stat-value">Learn</span>
+              <span class="hero-stat-label">Hands-on workshops</span>
+            </div>
+            <div class="hero-stat">
+              <span class="hero-stat-value">Lead</span>
+              <span class="hero-stat-label">Collaborative growth</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="hero-card hero-card-main">
+            <div class="hero-card-header">
+              <div class="hero-card-header-left">
+                <span class="status-dot"></span>
+                <span>Innovation Lab</span>
+              </div>
+              <span class="hero-card-chip">Live Energy</span>
+            </div>
+            <div class="circuit-board">
+              <svg viewBox="0 0 420 320" class="circuit-svg" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="circuitGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#00E5FF"/>
+                    <stop offset="50%" stop-color="#3B82F6"/>
+                    <stop offset="100%" stop-color="#8B5CF6"/>
+                  </linearGradient>
+                </defs>
+                <path d="M20 60h90l30 30h100l30-30h130" class="circuit-line"/>
+                <path d="M40 140h70l40 40h120l40-40h70" class="circuit-line delay"/>
+                <path d="M20 240h120l30-30h80l30 30h120" class="circuit-line"/>
+                <circle cx="110" cy="60" r="6" class="circuit-node"/>
+                <circle cx="240" cy="90" r="6" class="circuit-node"/>
+                <circle cx="150" cy="180" r="6" class="circuit-node"/>
+                <circle cx="270" cy="180" r="6" class="circuit-node"/>
+                <circle cx="170" cy="210" r="6" class="circuit-node"/>
+                <rect x="155" y="115" width="110" height="70" rx="16" class="chip"/>
+                <text x="210" y="146" text-anchor="middle" class="chip-label">VIDYUT</text>
+                <text x="210" y="168" text-anchor="middle" class="chip-sub">CORE</text>
+              </svg>
+              <div class="tech-badges">
+                <span class="tech-badge"><i data-lucide="terminal" aria-hidden="true"></i>Build</span>
+                <span class="tech-badge"><i data-lucide="sparkles" aria-hidden="true"></i>Create</span>
+                <span class="tech-badge"><i data-lucide="zap" aria-hidden="true"></i>Innovate</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-float-card float-a">
+            <i data-lucide="code" aria-hidden="true"></i>
+            <div><strong>Code</strong><span>Ideas to impact</span></div>
+          </div>
+          <div class="hero-float-card float-b">
+            <i data-lucide="circuit-board" aria-hidden="true"></i>
+            <div><strong>Engineer</strong><span>Real solutions</span></div>
+          </div>
+          <div class="hero-float-card float-c">
+            <i data-lucide="sparkles" aria-hidden="true"></i>
+            <div><strong>Create</strong><span>Future-ready tech</span></div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-indicator" aria-label="Scroll to About section">
+        <span>Scroll</span>
+        <i data-lucide="chevrons-down" aria-hidden="true"></i>
+      </a>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-kicker">About Vidyut Club</p>
+          <h2 id="about-title">MORE THAN A CLUB. A COMMUNITY OF INNOVATORS.</h2>
+          <p class="section-lead">Vidyut Club is a student-driven technical and innovation community dedicated to developing practical skills, encouraging creativity, and building tomorrow's technology leaders.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <div class="feature-top">
+              <span class="feature-number">01</span>
+              <div class="feature-icon"><i data-lucide="presentation" aria-hidden="true"></i></div>
+            </div>
+            <h3>Technical Workshops</h3>
+            <p>Hands-on learning sessions covering programming, AI, web development, electronics, and emerging technologies.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-top">
+              <span class="feature-number">02</span>
+              <div class="feature-icon"><i data-lucide="trophy" aria-hidden="true"></i></div>
+            </div>
+            <h3>Hackathons &amp; Innovation</h3>
+            <p>Collaborative competitions where students turn creative ideas into working solutions.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-top">
+              <span class="feature-number">03</span>
+              <div class="feature-icon"><i data-lucide="brain" aria-hidden="true"></i></div>
+            </div>
+            <h3>Technical Quizzes</h3>
+            <p>Interactive challenges designed to improve technical knowledge, logical thinking, and problem-solving abilities.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-top">
+              <span class="feature-number">04</span>
+              <div class="feature-icon"><i data-lucide="users" aria-hidden="true"></i></div>
+            </div>
+            <h3>Peer Learning</h3>
+            <p>A collaborative environment where students share knowledge, build projects, and grow together.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="events" aria-labelledby="events-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Upcoming Highlights</p>
+          <h2 id="events-title">WHAT'S HAPPENING NEXT?</h2>
+          <p class="section-lead">Explore sample upcoming activities designed for learning, collaboration, and innovation. <span class="sample-note">Sample event details shown below are placeholders and not officially confirmed.</span></p>
+        </div>
+
+        <!-- Editable event data: update titles, categories, dates, venues, descriptions, and links as needed -->
+        <div class="events-grid" data-events-editable="true">
+          <article class="event-card reveal">
+            <div class="event-meta">
+              <span class="event-badge">TECHNICAL COMPETITION</span>
+            </div>
+            <h3>TECHNOVA – Technical Quiz</h3>
+            <p class="event-description">Test your technical knowledge, logical thinking, and problem-solving skills.</p>
+            <ul class="event-details">
+              <li><i data-lucide="calendar-days" aria-hidden="true"></i><span><strong>Date:</strong> 15 December 2026 <em>(sample)</em></span></li>
+              <li><i data-lucide="map-pin" aria-hidden="true"></i><span><strong>Venue:</strong> College Seminar Hall <em>(sample)</em></span></li>
+            </ul>
+            <a href="#contact" class="btn btn-primary btn-sm">Register Now</a>
+          </article>
+
+          <article class="event-card reveal">
+            <div class="event-meta">
+              <span class="event-badge">INNOVATION CHALLENGE</span>
+            </div>
+            <h3>CODESTORM – Hackathon</h3>
+            <p class="event-description">Collaborate, innovate, and develop creative technology solutions.</p>
+            <ul class="event-details">
+              <li><i data-lucide="calendar-days" aria-hidden="true"></i><span><strong>Date:</strong> 20 December 2026 <em>(sample)</em></span></li>
+              <li><i data-lucide="map-pin" aria-hidden="true"></i><span><strong>Venue:</strong> Computer Science Department <em>(sample)</em></span></li>
+            </ul>
+            <a href="#contact" class="btn btn-primary btn-sm">Register Now</a>
+          </article>
+
+          <article class="event-card reveal">
+            <div class="event-meta">
+              <span class="event-badge">LEARNING EXPERIENCE</span>
+            </div>
+            <h3>CODECRAFT – Coding Bootcamp</h3>
+            <p class="event-description">Strengthen your programming fundamentals through practical coding sessions.</p>
+            <ul class="event-details">
+              <li><i data-lucide="calendar-days" aria-hidden="true"></i><span><strong>Date:</strong> 05 January 2027 <em>(sample)</em></span></li>
+              <li><i data-lucide="map-pin" aria-hidden="true"></i><span><strong>Venue:</strong> Computer Lab <em>(sample)</em></span></li>
+            </ul>
+            <a href="#contact" class="btn btn-primary btn-sm">Register Now</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="team" aria-labelledby="team-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Our Team</p>
+          <h2 id="team-title">THE PEOPLE BEHIND THE INNOVATION</h2>
+          <p class="section-lead">Meet the people who guide, organize, and inspire Vidyut Club. Official profiles and photos can be added as they become available.</p>
+        </div>
+
+        <div class="team-grid">
+          <!-- Team details: update names, descriptions, images, and social links as needed -->
+          <article class="team-card reveal">
+            <div class="team-avatar" aria-hidden="true"><span>DT</span></div>
+            <h3>Dr. Devanshu Tiwari</h3>
+            <p class="team-role">Faculty Coordinator</p>
+            <p class="team-desc">Provides mentorship, academic guidance, and support for club initiatives and student growth.</p>
+            <div class="team-social">
+              <a href="#" class="placeholder-link" data-placeholder="true" title="Profile link to be added" aria-label="Dr. Devanshu Tiwari LinkedIn profile (placeholder)"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a>
+              <a href="#" class="placeholder-link" data-placeholder="true" title="Profile link to be added" aria-label="Dr. Devanshu Tiwari GitHub profile (placeholder)"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg></a>
+            </div>
+          </article>
+
+          <article class="team-card reveal">
+            <div class="team-avatar" aria-hidden="true"><span>DS</span></div>
+            <h3>Dhruv Shukla</h3>
+            <p class="team-role">Club President</p>
+            <p class="team-desc">Leads the club vision, strategy, and community initiatives to empower student innovators.</p>
+            <div class="team-social">
+              <a href="#" class="placeholder-link" data-placeholder="true" title="Profile link to be added" aria-label="Dhruv Shukla LinkedIn profile (placeholder)"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a>
+              <a href="#" class="placeholder-link" data-placeholder="true" title="Profile link to be added" aria-label="Dhruv Shukla GitHub profile (placeholder)"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg></a>
+            </div>
+          </article>
+
+          <article class="team-card reveal">
+            <div class="team-avatar" aria-hidden="true"><span>SS</span></div>
+            <h3>Satakshi Sharma</h3>
+            <p class="team-role">Vice President</p>
+            <p class="team-desc">Supports operations, coordination, and member engagement across club activities.</p>
+            <div class="team-social">
+              <a href="#" class="placeholder-link" data-placeholder="true" title="Profile link to be added" aria-label="Satakshi Sharma LinkedIn profile (placeholder)"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a>
+              <a href="#" class="placeholder-link" data-placeholder="true" title="Profile link to be added" aria-label="Satakshi Sharma GitHub profile (placeholder)"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg></a>
+            </div>
+          </article>
+
+          <article class="team-card reveal">
+            <div class="team-avatar" aria-hidden="true"><span>D&amp;B</span></div>
+            <h3>Devansh &amp; Bhumika</h3>
+            <p class="team-role">Technical Lead</p>
+            <p class="team-desc">Drives technical learning, hands-on projects, and mentorship for members.</p>
+            <div class="team-social">
+              <a href="#" class="placeholder-link" data-placeholder="true" title="Profile link to be added" aria-label="Devansh &amp; Bhumika LinkedIn profile (placeholder)"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a>
+              <a href="#" class="placeholder-link" data-placeholder="true" title="Profile link to be added" aria-label="Devansh &amp; Bhumika GitHub profile (placeholder)"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg></a>
+            </div>
+          </article>
+
+          <article class="team-card reveal">
+            <div class="team-avatar" aria-hidden="true"><span>U&amp;H</span></div>
+            <h3>Unnati &amp; Harshita</h3>
+            <p class="team-role">Event Management</p>
+            <p class="team-desc">Plans and manages workshops, competitions, and community activities.</p>
+            <div class="team-social">
+              <a href="#" class="placeholder-link" data-placeholder="true" title="Profile link to be added" aria-label="Unnati &amp; Harshita LinkedIn profile (placeholder)"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a>
+              <a href="#" class="placeholder-link" data-placeholder="true" title="Profile link to be added" aria-label="Unnati &amp; Harshita GitHub profile (placeholder)"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg></a>
+            </div>
+          </article>
+
+          <article class="team-card reveal">
+            <div class="team-avatar" aria-hidden="true"><span>D&amp;S</span></div>
+            <h3>Dhruv &amp; Sumit</h3>
+            <p class="team-role">Design &amp; Media Lead</p>
+            <p class="team-desc">Shapes visual identity, creative content, and the club's media presence.</p>
+            <div class="team-social">
+              <a href="#" class="placeholder-link" data-placeholder="true" title="Profile link to be added" aria-label="Dhruv &amp; Sumit LinkedIn profile (placeholder)"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a>
+              <a href="#" class="placeholder-link" data-placeholder="true" title="Profile link to be added" aria-label="Dhruv &amp; Sumit GitHub profile (placeholder)"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="join" aria-labelledby="join-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Why Join</p>
+          <h2 id="join-title">BUILD SKILLS. BUILD CONFIDENCE. BUILD THE FUTURE.</h2>
+          <p class="section-lead">Vidyut Club helps students grow through hands-on learning, collaboration, and opportunities to turn ideas into meaningful work.</p>
+        </div>
+
+        <div class="benefits-grid">
+          <article class="benefit-item reveal"><i data-lucide="briefcase" aria-hidden="true"></i><div><h3>Real-world project experience</h3><p>Apply concepts to practical projects and build solutions beyond the classroom.</p></div></article>
+          <article class="benefit-item reveal"><i data-lucide="rocket" aria-hidden="true"></i><div><h3>Technical skill development</h3><p>Strengthen coding, problem-solving, and emerging technology skills through active learning.</p></div></article>
+          <article class="benefit-item reveal"><i data-lucide="users-round" aria-hidden="true"></i><div><h3>Team collaboration</h3><p>Work with peers, share ideas, and learn how great teams build together.</p></div></article>
+          <article class="benefit-item reveal"><i data-lucide="compass" aria-hidden="true"></i><div><h3>Leadership opportunities</h3><p>Take initiative, organize activities, and grow as a confident contributor and leader.</p></div></article>
+          <article class="benefit-item reveal"><i data-lucide="network" aria-hidden="true"></i><div><h3>Networking</h3><p>Connect with motivated students, mentors, and a community passionate about technology.</p></div></article>
+          <article class="benefit-item reveal"><i data-lucide="lightbulb" aria-hidden="true"></i><div><h3>Innovation and creativity</h3><p>Explore bold ideas, experiment freely, and transform curiosity into innovation.</p></div></article>
+        </div>
+
+        <div class="cta-panel reveal">
+          <div>
+            <h3>YOUR IDEAS DESERVE TO BE BUILT.</h3>
+            <p>Don't just watch technology evolve. Be part of the people creating it.</p>
+          </div>
+          <a href="#contact" class="btn btn-primary btn-lg">JOIN VIDYUT CLUB</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal">
+          <p class="section-kicker">Registration &amp; Contact</p>
+          <h2 id="contact-title">READY TO POWER UP WITH US?</h2>
+          <p class="section-lead">Share your interest in joining Vidyut Club. Fill out the form and we’ll receive your details.</p>
+          <div class="form-note" role="note">
+            <i data-lucide="info" aria-hidden="true"></i>
+            <p><strong>How it works:</strong> Your details are validated in the browser and submitted directly to the club email. The first submission may require a one-time confirmation/activation email from the form service.</p>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="registration-form" data-endpoint="https://formsubmit.co/ajax/ajaykumarbais2005@gmail.com" data-mailto="ajaykumarbais2005@gmail.com" novalidate>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="fullName">Full Name <span aria-hidden="true">*</span></label>
+              <input type="text" id="fullName" name="fullName" autocomplete="name" required aria-describedby="fullName-error">
+              <p class="field-error" id="fullName-error" aria-live="polite"></p>
+            </div>
+            <div class="form-field">
+              <label for="email">College Email <span aria-hidden="true">*</span></label>
+              <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="email-error">
+              <p class="field-error" id="email-error" aria-live="polite"></p>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="department">Department <span aria-hidden="true">*</span></label>
+              <input type="text" id="department" name="department" required aria-describedby="department-error" placeholder="e.g. Computer Science">
+              <p class="field-error" id="department-error" aria-live="polite"></p>
+            </div>
+            <div class="form-field">
+              <label for="year">Year of Study <span aria-hidden="true">*</span></label>
+              <select id="year" name="year" required aria-describedby="year-error">
+                <option value="">Select year</option>
+                <option value="1st Year">1st Year</option>
+                <option value="2nd Year">2nd Year</option>
+                <option value="3rd Year">3rd Year</option>
+                <option value="4th Year">4th Year</option>
+                <option value="Other">Other</option>
+              </select>
+              <p class="field-error" id="year-error" aria-live="polite"></p>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="interest">Area of Interest <span aria-hidden="true">*</span></label>
+            <select id="interest" name="interest" required aria-describedby="interest-error">
+              <option value="">Select an area</option>
+              <option value="Programming &amp; Web Development">Programming &amp; Web Development</option>
+              <option value="Artificial Intelligence &amp; Data">Artificial Intelligence &amp; Data</option>
+              <option value="Electronics &amp; Robotics">Electronics &amp; Robotics</option>
+              <option value="Design &amp; Media">Design &amp; Media</option>
+              <option value="Events &amp; Community">Events &amp; Community</option>
+              <option value="Other">Other</option>
+            </select>
+            <p class="field-error" id="interest-error" aria-live="polite"></p>
+          </div>
+
+          <div class="form-field">
+            <label for="message">Message <span aria-hidden="true">*</span></label>
+            <textarea id="message" name="message" rows="5" required aria-describedby="message-error" placeholder="Tell us why you'd like to join or what you'd like to learn."></textarea>
+            <p class="field-error" id="message-error" aria-live="polite"></p>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary" id="submit-btn">
+              <span class="btn-label">Submit Interest</span>
+              <span class="btn-loading" aria-hidden="true"><span class="spinner"></span>Submitting...</span>
+            </button>
+          </div>
+
+          <div class="form-status" id="form-status" role="status" aria-live="polite" tabindex="-1"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="brand footer-logo-link">
+          <img src="assets/logo.svg" alt="" class="brand-logo" width="42" height="42">
+          <span class="brand-text">VIDYUT CLUB</span>
+        </a>
+        <p class="footer-tagline">"Empowering Students. Inspiring Innovation."</p>
+        <p class="footer-copyline">A student-driven community for technology, creativity, and collaboration.</p>
+      </div>
+
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#join">Join Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h3>Social Media</h3>
+        <ul class="social-list">
+          <li><a href="#" class="placeholder-link" data-placeholder="true" title="Official profile link to be added" aria-label="Vidyut Club Instagram (placeholder link)"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>Instagram</a></li>
+          <li><a href="#" class="placeholder-link" data-placeholder="true" title="Official profile link to be added" aria-label="Vidyut Club LinkedIn (placeholder link)"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>LinkedIn</a></li>
+          <li><a href="#" class="placeholder-link" data-placeholder="true" title="Official profile link to be added" aria-label="Vidyut Club GitHub (placeholder link)"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>GitHub</a></li>
+          <li><a href="#" class="placeholder-link" data-placeholder="true" title="Official profile link to be added" aria-label="Vidyut Club YouTube (placeholder link)"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></svg>YouTube</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h3>Contact</h3>
+        <ul>
+          <li><strong>Faculty Coordinator:</strong> Dr. Devanshu Tiwari</li>
+          <li><strong>Email:</strong> <a href="mailto:vidyutclub@example.edu">vidyutclub@example.edu</a></li>
+          <li><strong>College:</strong> MITS-DU</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Vidyut Club. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top">
+    <i data-lucide="arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
